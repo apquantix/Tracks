@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.current-date {
+				grid-column: 1 / span 2;
+				padding: 20px 15px;
+				border: 1px solid;
+				background-color: #ccc;
+				font-weight: bold;
+				font-size: 14px;
+			}
+			
+			.cell-title {
+				padding: 15px;
+				padding-right: 30px;
+				border: 1px solid;
+				background-color: #f1f1f1;
+				font-weight: bold;
+				font-size: 13px;
+			}
+			
+			.cell-value {
+				padding: 15px;
+				border: 1px solid;
+				font-size: 13px;
+			}
+			
+			.grid-container {
+				display: grid;
+				grid-template-columns: auto auto;
+				padding: 20px;
+				justify-content: flex-start;
+				align-content: flex-start;
+				font-family: Helvetica;
+			}
+			
+			input[type=text] {
+				width: 100%;
+				padding: 10px;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				box-sizing: border-box;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div class="grid-container">
+			<div class="current-date">Current date:</div>
+			
+			<div class="cell-title"><p>Target Date</p></div>
+			<div class="cell-value"><input type="text"></div>
+			
+			<div class="cell-title"><p>Total Amount</p></div>
+			<div class="cell-value"><input type="text"></div>
+			
+			<div class="cell-title">Monthly</div>
+			<div class="cell-value"></div>
+			
+			<div class="cell-title">Weekly</div>
+			<div class="cell-value"></div>
+			
+			<div class="cell-title">Daily</div>
+			<div class="cell-value"></div>
+			
+			<div class="cell-title">Hourly</div>
+			<div class="cell-value"></div>
+		</div>
+	</body>
+</html>
