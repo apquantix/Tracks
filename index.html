@@ -30,7 +30,7 @@
 				display: grid;
 				grid-template-columns: auto auto;
 				padding: 20px;
-				justify-content: flex-start;
+				justify-content: center;
 				align-content: flex-start;
 				font-family: Helvetica;
 			}
@@ -42,30 +42,61 @@
 				border-radius: 4px;
 				box-sizing: border-box;
 			}
+			
 		</style>
+		
+		<script>
+			/** Set current date to the "Current date:" label area **/
+			const letsSetCurrentDate = () => { }
+			
+			/** Calculate the number of months between current date and target date **/
+			const letsCalculateRemainingMonths = (currentDate, targetDate) => {}
+			
+			/** Calculate the number of weeks between current date and target date **/
+			const letsCalculateRemainingWeeks = (currentDate, targetDate) => {}
+			
+			/** Calculate the number of days between current date and target date **/
+			const letsCalculateRemainingDays = (currentDate, targetDate) => {}
+			
+			/** Calculate the number of hours between current date and target date **/
+			const letsCalculateRemainingHours = (currentDate, targetDate) => {}
+			
+			/** Calculate the monthly load value **/
+			const letsCalculateMonthlyLoad = (totalAmount, remainingMonths) => {}
+			
+			/** Calculate the weekly load value **/
+			const letsCalculateWeeklyLoad = (totalAmount, remainingWeeks) => {}
+			
+			/** Calculate the daily load value **/
+			const letsCalculateDailyLoad = (totalAmount, remainingDays) => {}
+			
+			/** Calculate the hourly load value **/
+			const letsCalculateHourlyLoad = (totalAmount, remainingHours) => {}
+		</script>
 	</head>
 	
 	<body>
 		<div class="grid-container">
-			<div class="current-date">Current date:</div>
+			<div class="current-date" id="currentDateLabel">Current date:</div>
 			
 			<div class="cell-title"><p>Target Date</p></div>
-			<div class="cell-value"><input type="text"></div>
+			<div class="cell-value"><input type="text" id="targetDate"></div>
 			
 			<div class="cell-title"><p>Total Amount</p></div>
-			<div class="cell-value"><input type="text"></div>
+			<div class="cell-value"><input type="text" id="totalAmount"></div>
 			
-			<div class="cell-title">Monthly</div>
-			<div class="cell-value"></div>
+			<div class="cell-title">Monthly Load</div>
+			<div class="cell-value" id="monthlyLoadLabel"></div>
 			
-			<div class="cell-title">Weekly</div>
-			<div class="cell-value"></div>
+			<div class="cell-title">Weekly Load</div>
+			<div class="cell-value" id="weeklyLoadLabel"></div>
 			
-			<div class="cell-title">Daily</div>
-			<div class="cell-value"></div>
+			<div class="cell-title">Daily Load</div>
+			<div class="cell-value" id="dailyLoadLabel"></div>
 			
-			<div class="cell-title">Hourly</div>
-			<div class="cell-value"></div>
+			<div class="cell-title">Hourly Load</div>
+			<div class="cell-value" id="hourlyLoadLabel"></div>
+			
 		</div>
 	</body>
 </html>
