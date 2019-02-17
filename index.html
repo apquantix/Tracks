@@ -7,8 +7,15 @@
 	
 	<body>
 		<div class="grid-container">
-			<div class="cell-title">Current Date</div>
+			<div class="cell-title"><p>Current Date</p></div>
 			<div class="cell-value"><p id="currentDateLabel"></p></div>
+			
+			<div class="cell-title">Remaining Time</div>
+			<div class="cell-value">
+				<label id="remainingDaysLabel"></label> day(s)
+				<label id="remainingHoursLabel"></label> hour(s)
+				<label id="remainingMinutesLabel"></label> minute(s)
+			</div>
 			
 			<div class="cell-title"><p>Target Date</p></div>
 			<div class="cell-value"><input type="text" id="targetDate"></div>
@@ -28,6 +35,11 @@
 			<div class="cell-title">Hourly Load</div>
 			<div class="cell-value" id="hourlyLoadLabel"></div>
 			
+		</div>
+		
+		<div class="grid-button">
+			<input id="startButton" type="button" value="Start" class="button button-start">
+			<input id="stopButton" type="button" value="Stop" class="button button-stop">
 		</div>
 	</body>
 </html>

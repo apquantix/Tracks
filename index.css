@@ -29,3 +29,26 @@ input[type=text] {
   border-radius: 4px;
   box-sizing: border-box;
 }
+
+.grid-button {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 20px;
+  justify-content: center;
+}
+
+.button {
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 13px;
+  width: 150px;
+}
+
+.button-start {
+  background-color: #008CBA;
+}
+
+.button-stop {
+  background-color: #f44336;
+}
