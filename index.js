@@ -24,3 +24,22 @@ const letsCalculateDailyLoad = (totalAmount, remainingDays) => {}
 
 /** Calculate the hourly load value **/
 const letsCalculateHourlyLoad = (totalAmount, remainingHours) => {}
+
+/** Animation Section **/
+let currentAnimationFrame
+const animate = time => {
+  _eid("currentDateLabel").innerHTML = Date()
+  currentAnimationFrame = window.requestAnimationFrame(animate)
+}
+const letsStopClock = 
+  () => window.cancelAnimationFrame(currentAnimationFrame)
+const letsStartClock = 
+  () => window.requestAnimationFrame(animate)
+
+/***** Private Functions *****/
+
+/** Retrieve DOM element by ID **/
+const _eid = (x) => document.getElementById(x)
+
+/// Auto Start Clock
+letsStartClock()
